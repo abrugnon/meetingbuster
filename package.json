@@ -1,16 +1,27 @@
 {
     "name": "meetingBuster",
     "version": "0.0.1",
+    "description": "save time and maybe money",
+    "author": "Arnaud Brugnon",
+    "license" : "CECILL-2.0",
     "main": "server.js",
+    "repository":  { "type": "git", "url": "https://github.com/abrugnon/meetingbuster"},
     "scripts": {
         "start": "node server.js",
-        "devel": "Node_ENV=development nodemon server.js"
+        "server": "nodemon server.js",
+        "client": "cd client && yarn start",
+        "devel": "Node_ENV=development nodemon server.js",
+        "dev": "Node_ENV=development concurrently --kill-others-on-fail  \"yarn server\" \"yarn client\"",
+        "reactonly": "Node_ENV=development concurrently --kill-others-on-fail  \"yarn start\" \"yarn client\""
     },
+    "keywords": ["meeting", "bluetooth"],
     "dependencies": {
+        "dotenv": "^8.2.0",
         "express": "^4.16.4",
         "node-bluetooth": "^1.2.5"
     },
     "devDependencies": {
+        "concurrently": "^4.1.0",
         "nodemon": "^1.19.0"
     }
 }

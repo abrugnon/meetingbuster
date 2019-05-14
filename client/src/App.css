@@ -3,12 +3,11 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #99ccff;
   height: 150px;
   padding: 20px;
   color: white;
@@ -18,7 +17,67 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+.results {
+    border: 10px dotted black;
+    padding: 20px;
+}
+.DisplayBlock {
+  border: 3px dotted red;
+  background-color: #cce6ff;
+  display: inline-block;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+
+
+p.clock {
+  color: blue;
+  font-size: 3rem;
+}
+p.info {
+  color: blue;
+  padding: 5px;
+  font-size: 2rem;
+}
+a:link, a:visited {
+  background-color: #99ccff;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+a:hover, a:active {
+  background-color: #cce6ff;
+}
+
+:fullscreen {
+  background-color: yellow;
+}
+
+:fullscreen .DisplayBlock {
+  border: 1px dotted black;
+  background-color: #cce6ff;
+  display: inline-block;
+  padding: 10px;
+  font-family: sans-serif;
+}
+:fullscreen .clock {
+  font-size: 5vw;
+}
+:fullscreen .info {
+  font-size: 2vw;
+  display:inline;
+}
+
+.bottom-menu {
+  position: absolute;
+  bottom: 0;
+  text-align:center;
+  width:100%;
+  vertical-align:top;
 }

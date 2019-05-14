@@ -1,0 +1,51 @@
+Arguments: 
+  /snap/node/2485/bin/node /snap/node/2485/bin/yarn.js start
+
+PATH: 
+  /tmp/yarn--1574438951283-0.8448408322463445:/home/brugnon/bricolage/meetingbuster/node_modules/.bin:/home/brugnon/.config/yarn/link/node_modules/.bin:/snap/node/2485/libexec/lib/node_modules/npm/bin/node-gyp-bin:/snap/node/2485/lib/node_modules/npm/bin/node-gyp-bin:/snap/node/2485/bin/node_modules/npm/bin/node-gyp-bin:/tmp/yarn--1574438950904-0.23843933466060574:/home/brugnon/bricolage/meetingbuster/node_modules/.bin:/home/brugnon/.config/yarn/link/node_modules/.bin:/snap/node/2485/libexec/lib/node_modules/npm/bin/node-gyp-bin:/snap/node/2485/lib/node_modules/npm/bin/node-gyp-bin:/snap/node/2485/bin/node_modules/npm/bin/node-gyp-bin:/home/brugnon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/brugnon/bricolage/meetingbuster/client/package.json: Unexpected string in JSON at position 92
+      at JSON.parse (<anonymous>)
+      at /snap/node/2485/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/snap/node/2485/lib/cli.js:304:30)
+      at /snap/node/2485/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "license" : "CECILL-2.0"
+    "dependencies": {
+      "react": "^16.7.0",
+      "react-dom": "^16.7.0",
+      "react-full-screen": "^0.2.4",
+      "react-router-dom": "^5.0.1",
+      "react-scripts": "0.9.5"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    },
+    "proxy": "http://localhost:8000"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

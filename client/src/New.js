@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import logo from './conference.svg';
 import './App.css';
-
-
-
-import SumData from './Components/SumData';
 import Menu from './Components/Menu';
 
 
-
-class App extends Component {
+class New extends Component {
   render() {
 
     return (
@@ -24,7 +19,7 @@ class App extends Component {
         </p>
 
         <div className="results">
-          <SumData />
+          Hello new
         </div>
         <div>
           <Menu />
@@ -36,4 +31,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default New;
