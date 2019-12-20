@@ -53,13 +53,15 @@ Your app is ready to be deployed!
 
 ### Launch the NodeJS server
 
+`npm start`
 
-point to http://localhost:8000 and the frontend will be served by the node backend.
+Then point to http://localhost:8000 and the frontend will be served by the node backend.
 
 
 ## TODO
- * reset button
+  * reset button
   * Add a new stopwatch for a particular meeting
+  * ensure .env file is present
 
 # CREDITS
   logo from [https://publicdomainvectors.org]
