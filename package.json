@@ -17,7 +17,7 @@
     "keywords": ["meeting", "bluetooth"],
     "dependencies": {
         "dotenv": "^8.2.0",
-        "express": "^4.16.4",
+        "express": "^4.17.3",
         "node-bluetooth": "^1.2.5"
     },
     "devDependencies": {
